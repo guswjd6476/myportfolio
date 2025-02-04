@@ -130,7 +130,7 @@ export default function SkillsSection() {
     return (
         <motion.div className="h-screen flex flex-col lg:flex-row items-center justify-center bg-gray-100 px-6">
             {/* 왼쪽: 스킬 리스트 */}
-            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
                 {skills.map((skill, index) => (
                     <motion.div
                         key={index}
