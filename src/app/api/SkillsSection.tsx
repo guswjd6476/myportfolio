@@ -2,19 +2,8 @@
 
 import { useState } from 'react';
 import { motion } from 'framer-motion';
-import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaNodeJs } from 'react-icons/fa';
-import {
-    SiTypescript,
-    SiTailwindcss,
-    SiNextdotjs,
-    SiExpress,
-    SiMongodb,
-    SiMysql,
-    SiPostgresql,
-    SiFirebase,
-    SiAmazon,
-    SiGoogleanalytics,
-} from 'react-icons/si';
+import { FaHtml5, FaCss3Alt, FaJs, FaReact } from 'react-icons/fa';
+import { SiTypescript, SiFirebase, SiAmazon, SiGoogleanalytics } from 'react-icons/si';
 import { TbBrandReactNative } from 'react-icons/tb';
 
 const skills = [
