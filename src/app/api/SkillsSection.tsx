@@ -2,9 +2,19 @@
 
 import { useState } from 'react';
 import { motion } from 'framer-motion';
-import { FaHtml5, FaCss3Alt, FaJs, FaReact } from 'react-icons/fa';
-import { SiTypescript, SiFirebase, SiAmazon, SiGoogleanalytics } from 'react-icons/si';
-import { TbBrandReactNative } from 'react-icons/tb';
+import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaNodeJs } from 'react-icons/fa';
+import {
+    SiTypescript,
+    SiTailwindcss,
+    SiNextdotjs,
+    SiExpress,
+    SiMongodb,
+    SiMysql,
+    SiPostgresql,
+    SiGoogleanalytics,
+    SiAmazon,
+    SiFirebase,
+} from 'react-icons/si';
 
 const skills = [
     {
@@ -43,11 +53,53 @@ const skills = [
         projects: ['E-commerce 사이트', 'Blog 플랫폼', '대시보드 앱'],
     },
     {
-        name: 'React Native',
-        icon: <TbBrandReactNative size={40} className="text-blue-500" />,
+        name: 'Next.js',
+        icon: <SiNextdotjs size={40} className="text-gray-900" />,
         level: 70,
-        description: '크로스 플랫폼 모바일 앱 개발 가능',
-        projects: ['모바일 커뮤니티 앱', 'React Native Expo 프로젝트', '하이브리드 앱 개발'],
+        description: 'SSR 및 SSG 활용 가능',
+        projects: ['정적 웹사이트', 'SEO 최적화 블로그', 'Serverless 프로젝트'],
+    },
+    {
+        name: 'TailwindCSS',
+        icon: <SiTailwindcss size={40} className="text-teal-500" />,
+        level: 80,
+        description: '유틸리티 퍼스트 접근 방식 숙련',
+        projects: ['Landing Page', 'Admin Panel', '스타일링 빠른 프로토타입'],
+    },
+    {
+        name: 'Node.js',
+        icon: <FaNodeJs size={40} className="text-green-500" />,
+        level: 65,
+        description: 'Express 기반 API 서버 개발 가능',
+        projects: ['REST API', 'JWT 인증 시스템', 'WebSocket 채팅'],
+    },
+    {
+        name: 'Express',
+        icon: <SiExpress size={40} className="text-gray-700" />,
+        level: 60,
+        description: 'Middleware 활용 가능, API 구축 경험',
+        projects: ['RESTful API', 'GraphQL 서버', '파일 업로드 시스템'],
+    },
+    {
+        name: 'MongoDB',
+        icon: <SiMongodb size={40} className="text-green-600" />,
+        level: 70,
+        description: 'Mongoose 활용 가능, 스키마 설계 경험',
+        projects: ['CRUD API', '로그인 시스템', '데이터 분석'],
+    },
+    {
+        name: 'MySQL',
+        icon: <SiMysql size={40} className="text-blue-700" />,
+        level: 75,
+        description: 'SQL 쿼리 작성 및 JOIN 활용 가능',
+        projects: ['회원 관리 시스템', '데이터 분석', 'E-commerce 백엔드'],
+    },
+    {
+        name: 'PostgreSQL',
+        icon: <SiPostgresql size={40} className="text-[#336791]" />,
+        level: 70,
+        description: '고급 SQL 및 관계형 데이터 모델링 경험',
+        projects: ['대형 데이터베이스 설계', '트랜잭션 처리', 'Full-text 검색'],
     },
     {
         name: 'Firebase',
