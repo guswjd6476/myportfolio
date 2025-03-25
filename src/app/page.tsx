@@ -2,8 +2,8 @@
 import { motion } from 'framer-motion';
 import { FaUser, FaBirthdayCake, FaMapMarkerAlt, FaGraduationCap } from 'react-icons/fa';
 
-import SkillsSection from './api/SkillsSection';
 import ProjectsSection from './api/ProjectsSection';
+import CareerSection from './api/CareerSection';
 
 export default function Home() {
     const scrollToSection = (id: string) => {
@@ -20,7 +20,7 @@ export default function Home() {
                     강현정프로젝트
                 </div>
                 <nav className="flex space-x-4">
-                    {['about', 'skills', 'projects', 'contact'].map((section, index) => (
+                    {['about', 'career', 'projects'].map((section, index) => (
                         <button
                             key={index}
                             onClick={() => scrollToSection(section)}
@@ -80,13 +80,13 @@ export default function Home() {
                 </div>
             </motion.div>
 
-            <SkillsSection />
-
+            <CareerSection />
             <ProjectsSection />
-            <motion.div id="contact" className="h-screen flex flex-col items-center justify-center bg-gray-400">
+
+            {/* <motion.div id="contact" className="h-screen flex flex-col items-center justify-center bg-gray-400">
                 <h2 className="text-4xl font-bold text-gray-900">Contact</h2>
                 <p className="text-lg text-gray-600 mt-4">Feel free to reach out to me!</p>
-            </motion.div>
+            </motion.div> */}
         </div>
     );
 }
