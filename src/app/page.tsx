@@ -82,11 +82,6 @@ export default function Home() {
 
             <CareerSection />
             <ProjectsSection />
-
-            {/* <motion.div id="contact" className="h-screen flex flex-col items-center justify-center bg-gray-400">
-                <h2 className="text-4xl font-bold text-gray-900">Contact</h2>
-                <p className="text-lg text-gray-600 mt-4">Feel free to reach out to me!</p>
-            </motion.div> */}
         </div>
     );
 }
