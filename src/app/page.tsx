@@ -16,7 +16,7 @@ export default function Home() {
     return (
         <div className="min-h-screen bg-gray-100">
             <header className="fixed top-0 left-0 w-full flex justify-between items-center bg-white shadow-md py-4 px-6 z-50">
-                <div className="text-xl font-bold cursor-pointer" onClick={() => scrollToSection('home')}>
+                <div className="text-xl text-black font-bold cursor-pointer" onClick={() => scrollToSection('home')}>
                     강현정프로젝트
                 </div>
                 <nav className="flex space-x-4">
