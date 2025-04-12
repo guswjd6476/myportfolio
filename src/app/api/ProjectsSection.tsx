@@ -75,7 +75,7 @@ const projects: Project[] = [
     {
         title: 'PICK_HAPPY',
         description: '나와 어울리는 식물을 찾는 심리테스트',
-        url: 'pickhappy-sandy.vercel.app',
+        url: 'https://pickhappy-sandy.vercel.app/',
         notionUrl: 'https://thin-garlic-63f.notion.site/ebd/1c8c07f02d2880c58105f985c8eb6a3b',
         githubUrl: 'https://github.com/guswjd6476/pickhappy',
         tech: ['Next.js', 'PostgreSQL', 'TailwindCSS'],
@@ -94,9 +94,11 @@ export default function ProjectsSection() {
     };
 
     return (
-        <div id="projects" className="min-h-screen flex flex-col items-center justify-center bg-gray-100 px-6 py-12">
+        <div
+            id="projects"
+            className="min-h-screen flex flex-col items-center justify-center bg-gray-100 px-6 py-12"
+        >
             <h2 className="text-4xl font-bold text-gray-900">Projects</h2>
-            <p className="text-lg text-gray-600 mt-4">Check out my latest work here.</p>
 
             <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
                 {projects.map((project, index) => (
@@ -114,7 +116,10 @@ export default function ProjectsSection() {
 
                         <div className="mt-4 flex flex-wrap gap-2 justify-center">
                             {project.tech.map((tech, idx) => (
-                                <span key={idx} className="bg-gray-800 text-white px-3 py-1 rounded-full text-sm">
+                                <span
+                                    key={idx}
+                                    className="bg-gray-800 text-white px-3 py-1 rounded-full text-sm"
+                                >
                                     {tech}
                                 </span>
                             ))}
@@ -183,7 +188,6 @@ export default function ProjectsSection() {
                             src={selectedProject.notionUrl}
                             width="100%"
                             height="600"
-                            frameBorder="0"
                             allowFullScreen
                         />
                     </motion.div>
