@@ -47,7 +47,7 @@ export const projects: Project[] = [
     {
         title: 'STUDIOMOONA',
         description: '자기개발 컨텐츠를 서로 공유하는 플랫폼',
-        url: 'https://studiomoona.co.kr',
+        url: 'https://studiomuna.vercel.app',
         notionUrl: '',
         githubUrl: '',
         tech: ['Next.js', 'TailwindCSS'],
